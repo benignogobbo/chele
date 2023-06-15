@@ -19,15 +19,16 @@ Arduino understands the following client requests:
 Contains the network configuration and NTP server address needed for Arduino board network access setup.
 The format is the following (X = hexadecinal byte, N decimal byte):
 
-    mac X:X:X:X:X:X
-    ip N.N.N.N
-    gw N.N.N.N
-    dns N.N.N.N
-    nm N.N.N.N
-    ntp N.N.N.N
+mac X:X:X:X:X:X <br>
+ip N.N.N.N <br>
+gw N.N.N.N <br>
+dns N.N.N.N <br>
+nm N.N.N.N <br>
+ntp N.N.N.N <br>
 
-Example
-    mac DE:AD:FA:CE:00:00
+Example:
+
+    mac DE:AD:FA:CE:00.00
     ip 192.168.69.2
     gw 192.168.69.1
     dns 1.1.1.1
