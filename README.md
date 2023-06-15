@@ -24,7 +24,7 @@ currMn (n: 0...3) is the readount Max/sqrt(2) current of the n-th line <br>
 ## config.txt
 Contains the network configuration and NTP server address needed for Arduino board network access setup. this file must be copied onto a Micro SD card to be inserted in the extension board of the Arduino.
 Currently the dns is configured but not used.
-The format is the following (X: a hexadecinal byte, N: a decimal byte):
+The format is the following (X: an hexadecinal byte, N: a decimal byte):
 
 <pre>mac X:X:X:X:X:X
 ip N.N.N.N
