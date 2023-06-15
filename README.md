@@ -20,12 +20,12 @@ Contains the network configuration and NTP server address needed for Arduino boa
 Currently the dns is configured but not used.
 The format is the following (X = hexadecinal byte, N decimal byte):
 
-mac X:X:X:X:X:X <br>
+<pre>mac X:X:X:X:X:X <br>
 ip N.N.N.N <br>
 gw N.N.N.N <br>
 dns N.N.N.N <br>
 nm N.N.N.N <br>
-ntp N.N.N.N <br>
+ntp N.N.N.N <br></pre>pre>
 
 Example:
 
