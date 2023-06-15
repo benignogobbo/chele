@@ -17,9 +17,17 @@ Arduino understands the following client requests:
 
 ## config.txt
 Contains the network configuration and NTP server address needed for Arduino board network access setup.
-The format is the following:
+The format is the following (X = hexadecinal byte, N decimal byte):
 
-    mac A8:61:0A:AE:E4:CA
+    mac X:X:X:X:X:X
+    ip N.N.N.N
+    gw N.N.N.N
+    dns N.N.N.N
+    nm N.N.N.N
+    ntp N.N.N.N
+
+Example
+    mac DE:AD:FA:CE:00:00
     ip 192.168.69.2
     gw 192.168.69.1
     dns 1.1.1.1
