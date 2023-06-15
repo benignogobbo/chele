@@ -19,7 +19,7 @@ Where:
 dateString is the readout date in yyyy-mm-dd format <br>
 timeString is the radout time in hh:mm format <br>
 currRn (n: 0...3) is the readout RMS current of the n-th line <br>
-currMn (n: 0...3) is the readount $$Max/\sqrt(2)$$ current of the n-th line <br>
+currMn (n: 0...3) is the readount Max/sqrt(2) current of the n-th line <br>
 
 ## config.txt
 Contains the network configuration and NTP server address needed for Arduino board network access setup. this file must be copied onto a Micro SD card to be inserted in the extension board of the Arduino.
