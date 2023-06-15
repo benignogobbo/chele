@@ -16,7 +16,8 @@ Arduino understands the following client requests:
 ## Data format
 
 ## config.txt
-Contains the network configuration and NTP server address needed for Arduino board network access setup.
+Contains the network configuration and NTP server address needed for Arduino board network access setup. this file must be copied onto a Micro SD card to be inserted in the extension board of the Arduino.
+Currently the dns is configured but not used.
 The format is the following (X = hexadecinal byte, N decimal byte):
 
 mac X:X:X:X:X:X <br>
@@ -34,5 +35,18 @@ Example:
     dns 1.1.1.1
     nm 255.255.255.0
     ntp 192.168.69.1
+
+## Client software
+The client software folder contains some examples comunication examples between a Linux machine and the Arduino board as well as a tool to download via TPC/IP an updated config.txt file to the Arduino SD card.
+| program | action |
+|---------|---------|
+| `test` | Asks and dumps arduino measurements  |
+| `reset` | Asks Arduino to perform a software reset |
+| `dispon` | Asks Arduino to turn the display on |
+| `dispoff` | Asks Arduino to turn the display off |
+| `command command-string` | Asks Arduino to perform a generic command |
+| `updatesd` | Tries to send a condig.txt file to Ardino via serial connection (fragile) |
+
+
 
 
