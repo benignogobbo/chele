@@ -14,7 +14,7 @@ Arduino understands the following client requests:
 | `dispoff` | Turns OLED display off |
 
 ## Data format
-<pre> dateString timeString currR0 currM0 currR1 currM1 currR2 currM2 currR3 currM3 </pre>pre>
+<pre> dateString timeString currR0 currM0 currR1 currM1 currR2 currM2 currR3 currM3 </pre>
 Where:
 dateString is the readout date in yyyy-mm-dd format <br>
 timeString is the radout time in hh:mm format <br>
