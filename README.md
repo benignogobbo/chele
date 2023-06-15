@@ -13,6 +13,17 @@ Arduino understands the following client requests:
 | `dispon` | Turns OLED display on |
 | `dispoff` | Turns OLED display off |
 
+## Data format
 
+## config.txt
+Contains the network configuration and NTP server address needed for Arduino board network access setup.
+The format is the following:
+
+  mac A8:61:0A:AE:E4:CA
+  ip 192.168.69.2
+  gw 192.168.69.1
+  dns 1.1.1.1
+  nm 255.255.255.0
+  ntp 192.168.69.1
 
 
