@@ -44,7 +44,7 @@ The client software folder contains some examples comunication examples between 
 | `reset` | Asks Arduino to perform a software reset |
 | `dispon` | Asks Arduino to turn the display on |
 | `dispoff` | Asks Arduino to turn the display off |
-| `command &lt;command&gt;` | Asks Arduino to perform a generic command |
+| `command <command>` | Asks Arduino to perform a generic command |
 | `updatesd` | Tries to send a condig.txt file to Ardino via serial connection (fragile) |
 
 
