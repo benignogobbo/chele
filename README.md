@@ -51,7 +51,7 @@ The client software folder contains some examples comunication examples between 
 | `dispon <ip>` | Asks Arduino to turn the display on |
 | `dispoff <ip>` | Asks Arduino to turn the display off |
 | `command <ip> <command>` | Asks Arduino to perform a generic &lt;command&gt; |
-| `updatesd <s/n` | Tries to send a condig.txt file to Ardino via serial connection (fragile) |
+| `updatesd <s/n>` | Tries to send a condig.txt file to Ardino via serial connection (fragile). <s/n> is the Arduino Shield serial number |
 
 
 
