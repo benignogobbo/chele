@@ -3,6 +3,16 @@ This is the software for the Arduino based pump current meter developed to monit
 It consists of the Arduino firmware (chele-x.y.z-yyyymmdd), tested on (original) Arduino Mega 2560 and the Linux client C++ sample tested on a PC running Ubuntu 22.04.
 Communication between Linux Client and arduino is via TCP/IP socket connection
 
+## Build info
+The following additional libraries are needed to build the code.<br>
+
+These are needed to drive the OLED monochrome display:
+https://github.com/adafruit/Adafruit-GFX-Library
+https://github.com/adafruit/Adafruit_SH110x
+
+This is needed to read the ADCs
+https://github.com/adafruit/Adafruit_ADS1X15
+
 ## Commands
 Arduino understands the following client requests:
 | command | action |
