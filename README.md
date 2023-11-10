@@ -41,7 +41,7 @@ ip N.N.N.N
 gw N.N.N.N
 dns N.N.N.N
 nm N.N.N.N
-ntp N.N.N.N </pre>pre>
+ntp N.N.N.N </pre>
 
 Example:
 
