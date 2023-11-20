@@ -7,11 +7,15 @@ Communication between Linux Client and arduino is via TCP/IP socket connection
 The following additional libraries are needed to build the code.<br>
 
 These are needed to drive the OLED monochrome display:<br><br>
-https://github.com/adafruit/Adafruit-GFX-Library <br>
-https://github.com/adafruit/Adafruit_SH110x <br><br>
+Adafruit GFX Library  1.11.9 or newer<br>
+Adafruit SH110x       4.0.1 or newer<br><br>
 
 This is needed to read the ADCs: <br>
-https://github.com/adafruit/Adafruit_ADS1X15<br>
+https://github.com/adafruit/Adafruit_ADS1X15   2.4.2 or newer<br>
+
+Those libs are needed for networking: <br><br>
+Ethernet        2.0.2 or newer
+NTPClient       3.2.1 or newer
 
 ## Commands
 Arduino understands the following client requests:
