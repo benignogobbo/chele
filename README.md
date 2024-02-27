@@ -60,7 +60,7 @@ Example:
     ntp 192.168.69.1
 
 ## Client software
-The client software folder contains some examples comunication examples between a Linux machine and the Arduino board as well as a tool to download via TPC/IP an updated config.txt file to the Arduino SD card.
+The client software folder contains some comunication examples between a Linux machine and the Arduino board as well as a tool to download via TPC/IP an updated config.txt file to the Arduino SD card.
 | program | action |
 |---------|---------|
 | `test <ip>` | Asks and dumps arduino measurements  |
