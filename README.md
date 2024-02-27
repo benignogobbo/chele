@@ -7,18 +7,18 @@ Communication between Linux Client and arduino is via TCP/IP socket connection
 Now the program stops ADC readout activities on any request from network. If the request is "data" then it retuns the previous readout currents. As a complete currents evaluation takes about 4s, if the network requests frequency is faster than every 5s, the arduino will never be able to estimate currents. 
 
 ## Build info
-The following additional libraries are needed to build the code.<br>
+The following additional libraries are needed to build the code (they all can be installed using Arduino IDE Library Manager).<br>
 
 These are needed to drive the OLED monochrome display:<br>
 Adafruit GFX Library  1.11.9 or newer<br>
-Adafruit SH110x       4.0.1 or newer<br><br>
+Adafruit SH110x       2.1.10 or newer<br><br>
 
 This is needed to read the ADCs: <br>
-https://github.com/adafruit/Adafruit_ADS1X15   2.4.2 or newer<br><br>
+Adafruit ADS1X15      2.5.0 or newer<br><br>
 
 Those libs are needed for networking: <br>
-Ethernet        2.0.2 or newer<br>
-NTPClient       3.2.1 or newer<br><br>
+Ethernet              2.0.2 or newer<br>
+NTPClient             3.2.1 or newer<br><br>
 
 ## Commands
 Arduino understands the following client requests:
