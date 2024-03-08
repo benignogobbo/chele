@@ -3,7 +3,7 @@ This is the software for the Arduino based pump current meter developed to monit
 It consists of the Arduino firmware (chele-x.y.z-yyyymmdd), tested on (original) Arduino Mega 2560 and the Linux client C++ sample tested on a PC running Ubuntu 22.04.
 Communication between Linux Client and arduino is via TCP/IP socket connection
 
-## NOTE on Release 0.3.2
+## NOTE on Releases 0.3.1 and 0.3.2
 Now the program stops ADC readout activities on any request from network. If the request is "data" then it retuns the previous readout currents. As a complete currents evaluation takes about 4s, if the network requests frequency is faster than every 5s, the arduino will never be able to estimate currents. 
 
 ## Build info
