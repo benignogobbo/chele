@@ -34,7 +34,7 @@ Arduino understands the following client requests:
 <pre> dateString timeString currR0 currM0 currR1 currM1 currR2 currM2 currR3 currM3 </pre>
 Where:<br>
 dateString is the readout date in yyyy-mm-dd format <br>
-timeString is the radout time in hh:mm format <br>
+timeString is the radout time in hh:mm:ss format <br>
 currRn (n: 0...3) is the readout RMS current of the n-th line <br>
 currMn (n: 0...3) is the readount Max/sqrt(2) current of the n-th line <br>
 
