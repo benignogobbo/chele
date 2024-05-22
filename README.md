@@ -3,26 +3,28 @@ This is the software for the Arduino based pump current meter developed to monit
 It consists of the Arduino firmware (chele-x.y.z-yyyymmdd), tested on (original) Arduino Mega 2560 and the Linux client C++ sample tested on a PC running Ubuntu 22.04.
 Communication between Linux Client and arduino is via TCP/IP socket connection
 
-## NOTE on Releases 0.3.1 or newer
-Now the program stops ADC readout activities on any request from network. If the request is "data" then it retuns the previous readout currents. As a complete currents evaluation takes about 4s, if the network requests frequency is faster than every 5s, the arduino will never be able to estimate currents. 
+## NOTEs on Release 0.4.0 and newer
+The program stops ADC readout activities on any request from network. If the request is "data" then it retuns the previous readout currents. As a complete currents evaluation takes about 4s, if the network requests frequency is faster than every 5s, the arduino will never be able to estimate currents.
+Now the software supports a 128x64 pixels OLED yellow monochrome display and a 320x240 pixels TFT color display.
 
 ## Build info
-The following additional libraries are needed to build the code (they all can be installed using Arduino IDE Library Manager).<br>
+The following additional libraries are needed to build the code (they all can be installed using Arduino IDE Library Manager). The numbers in round brackets are the release numbers used to build the software).<br>
 
 These are needed to drive the OLED monochrome display:<br>
-Adafruit GFX Library   1.11.9 or newer<br>
-Adafruit SH110x        2.1.10 or newer<br><br>
+Adafruit GFX Library   (1.11.9)<br>
+Adafruit SH110x        (2.1.10)<br><br>
 
 And these are needed to drive ILI9341 320x240 TFT display:<br>
-Adafruit ILI9341       1.6.0 or never <br>
-U8g2_for_adafruit_GFX  1.8.0 or newer <br><br>
+Adafruit ILI9341       (1.6.0)<br>
+U8g2_for_adafruit_GFX  (1.8.0)<br><br>
 
 This is needed to read the ADCs: <br>
-Adafruit ADS1X15        2.5.0 or newer<br><br>
+Adafruit ADS1X15        (2.5.0)<br><br>
 
 These libs are needed for networking: <br>
-Ethernet                2.0.2 or newer<br>
-NTPClient               3.2.1 or newer<br><br>
+Ethernet                (2.0.2)<br>
+NTPClient               (3.2.1)<br>
+Time                    (1.6.1)<br><br>
 
 ## Commands
 Arduino understands the following client requests:
@@ -31,8 +33,8 @@ Arduino understands the following client requests:
 | `data` | Returns current measurements |
 | `vers` | Returns the software version |
 | `reset` | Performs a software AVR reset |
-| `dispon` | Turns OLED display on |
-| `dispoff` | Turns OLED display off |
+| `dispon` | Turns OLED/TFT display on |
+| `dispoff` | Turns OLED/TFT display off |
 
 ## Data format
 <pre> dateString timeString currR0 currM0 currR1 currM1 currR2 currM2 currR3 currM3 </pre>
