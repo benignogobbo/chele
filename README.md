@@ -1,11 +1,11 @@
 # chele
 This is the software for the Arduino based pump current meter developed to monitor the KEK Belle II experiment dew point sniffers.
-It consists of the Arduino firmware (chele-x.y.z-yyyymmdd), tested on (original) Arduino Mega 2560 and the Linux client C++ sample tested on a PC running Ubuntu 22.04.<br>
+It consists of the Arduino firmware (chele-x.y.z-yyyymmdd), tested on (original) Arduino Mega 2560 and the Linux client C++ sample tested on a PC running Ubuntu 22.04.
 Communication between Linux Client and arduino is via TCP/IP socket connection
 
 ## NOTEs on Release 0.4.0 and newer
-The program stops ADC readout activities on any request from network. If the request is "data" then it retuns the previous readout currents. As a complete currents evaluation takes about 4s, if the network requests frequency is faster than every 5s, the arduino will never be able to estimate currents.
-Now the software supports a 128x64 pixels OLED yellow monochrome display and a 320x240 pixels TFT color display.
+The program stops ADC readout activities on any request from network. If the request is "data" then it retuns the previous readout currents. As a complete currents evaluation takes about 4s, if the network requests frequency is faster than every 5s, the arduino will never be able to estimate currents.<br>
+Software supports a 128x64 pixels OLED yellow monochrome display as well as a 320x240 pixels TFT color display.
 
 ## Build info
 The following additional libraries are needed to build the code (they all can be installed using Arduino IDE Library Manager). The numbers in round brackets are the release numbers used to build the software).<br>
